@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="316dp"
+        android:fontFamily="monospace"
+        android:text="Calculator"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/spnOperator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editOp1"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="425dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editOp2"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="425dp"
+        android:layout_marginEnd="29dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnOperator"
+        android:layout_width="122dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginEnd="46dp"
+        app:layout_constraintEnd_toStartOf="@+id/editOp2"
+        app:layout_constraintStart_toEndOf="@+id/editOp1"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="184dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="114dp"
+        android:text="Calculate"
+        android:onClick="calc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnOperator" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/spnOperator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
