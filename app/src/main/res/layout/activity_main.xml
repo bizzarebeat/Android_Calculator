@@ -11,16 +11,13 @@
         android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="175dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="175dp"
         android:layout_marginBottom="316dp"
         android:fontFamily="monospace"
-        android:text="Calculator"
+        android:text="@string/title_text"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/spnOperator"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
